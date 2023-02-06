@@ -76,9 +76,21 @@ public class Main {
 
 
 
-        Collections.sort(users,Comparator.comparing());
+        Collections.sort(users);
+
+        users.forEach(user -> {
+            System.out.println("My name is " + user.firstName + user.lastName + " age is " + user.age);
+        });
 
 
+        // sorted by the age...
+
+        Collections.sort(users, Comparator.comparingInt(User::getAge));
+
+
+        users.forEach(user -> {
+            System.out.println("My name is " + user.firstName + " age is " + user.age);
+        });
 
     }
 }

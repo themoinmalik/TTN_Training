@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Objects;
 
-public class User {
+public class User implements Comparable<User>{
 
     String firstName;
     String lastName;
@@ -41,5 +41,11 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public int compareTo(User o) {
+        int lastcomp = firstName.compareTo(o.firstName);
+        return (lastcomp != 0 ? lastcomp:lastName.compareTo(o.lastName));
     }
 }
