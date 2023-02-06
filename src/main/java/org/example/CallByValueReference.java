@@ -34,6 +34,8 @@ public class CallByValueReference {
 
         object.hello();
 
+        System.out.println("Helllo world.");
+
 
 
     }
