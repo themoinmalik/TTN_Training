@@ -45,5 +45,8 @@ public class Main {
         bank.fileLogBank(2000,1000);
 
 
+        CallByValueReference object = new CallByValueReference();
+
+
     }
 }
