@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class CollectionJava {
 
@@ -44,7 +41,6 @@ public class CollectionJava {
 //                        System.out.println(el);
 //                }
 
-
                 // remove element which are even.
 
 //                int sum = 0;
@@ -59,9 +55,29 @@ public class CollectionJava {
 
                 // searching...
 
-                System.out.println(list.contains(20));
-                System.out.println(list.indexOf(34));
-                System.out.println(list.lastIndexOf(2));
+//                System.out.println(list.contains(20));
+//                System.out.println(list.indexOf(34));
+//                System.out.println(list.lastIndexOf(2));
+
+
+//                System.out.println(list);
+
+
+
+//                list.add(list.size()-1,47);
+
+
+                // hashmap...
+
+                Map<String,String> map = new HashMap<>();
+
+                map.put("moin","malik");
+                map.put("zaid","khan");
+                map.put("kashan","khan");
+                map.put("asad","ch");
+
+
+                System.out.println(map.get("moin"));
 
         }
 
