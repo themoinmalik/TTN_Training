@@ -77,7 +77,35 @@ public class CollectionJava {
                 map.put("asad","ch");
 
 
-                System.out.println(map.get("moin"));
+                System.out.println(map.get("moin"));  // print value...
+
+                Set<Map.Entry<String,String>> setMap = map.entrySet();
+                System.out.println(setMap);
+
+
+                // print all keys...
+                Set<String> keys = map.keySet();
+                System.out.println("keys are " + keys);
+
+
+                // print values...
+                Collection<String> values = map.values();
+                System.out.println("values are " + values);
+
+
+                // iterating map ...
+
+//                Iterator<Map.Entry<String, String>> iter = map.entrySet().iterator();
+//                while (iter.hasNext()) {
+//                        Map.Entry<String,String> entry = iter.next();
+//                        System.out.println(entry.getKey() + entry.getValue());
+//                }
+
+                Iterator<Map.Entry<String,String>> iter = map.entrySet().iterator();
+                iter.forEachRemaining(s -> {
+                        System.out.println(s.getKey());
+                });
+
 
         }
 
