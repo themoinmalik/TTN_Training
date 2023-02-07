@@ -95,11 +95,17 @@ public class CollectionJava {
 //                        System.out.println(entry.getKey() + entry.getValue());
 //                }
 
-                Iterator<Map.Entry<String,String>> iter = map.entrySet().iterator();
-                iter.forEachRemaining(s -> {
-                        System.out.println(s.getKey());
-                });
+//                Iterator<Map.Entry<String,String>> iter = map.entrySet().iterator();
+//                iter.forEachRemaining(s -> {
+//                        System.out.println(s.getKey());
+//                });
 
+
+                Map<Employee, Double> employeeDoubleMap = new HashMap<>();
+                employeeDoubleMap.put(new Employee("Moin MAlik",23,"Engineer"), 34000.0);
+
+
+                System.out.println(employeeDoubleMap);
 
         }
 

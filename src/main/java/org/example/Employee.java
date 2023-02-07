@@ -6,6 +6,8 @@ public class Employee {
     int age;
     String designation;
 
+    double salary;
+
 
     public Employee(String name, int age, String designation) {
         this.name = name;
@@ -13,6 +15,13 @@ public class Employee {
         this.designation = designation;
     }
 
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 
     public String getName() {
         return name;
