@@ -31,8 +31,6 @@ public class CollectionJava {
 
 //                list.forEach(e -> System.out.println(e));
 
-
-
                 // iterate reverse...
 
 //                ListIterator<Integer> iter = list.listIterator(list.size());
@@ -59,13 +57,9 @@ public class CollectionJava {
 //                System.out.println(list.indexOf(34));
 //                System.out.println(list.lastIndexOf(2));
 
-
 //                System.out.println(list);
 
-
-
 //                list.add(list.size()-1,47);
-
 
                 // hashmap...
 
