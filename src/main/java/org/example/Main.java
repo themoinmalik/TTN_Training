@@ -49,10 +49,10 @@ public class Main {
 //        Bank bank = new Bank();
 //        bank.fileLogBank(2000,1000);
 
-        List<User> users = new ArrayList<>();
-        users.add(new User("Moin","Malik",23));
-        users.add(new User("Baid","Khan",25));
-        users.add(new User("Aakshay","Rawat",20));
+//        List<User> users = new ArrayList<>();
+//        users.add(new User("Moin","Malik",23));
+//        users.add(new User("Baid","Khan",25));
+//        users.add(new User("Aakshay","Rawat",20));
 
 //        users.forEach(user -> {
 //            System.out.println("My name is " + user.firstName + user.lastName + " age is " + user.age);
@@ -76,21 +76,33 @@ public class Main {
 
 
 
-        Collections.sort(users);
+//        Collections.sort(users);
+//
+//        users.forEach(user -> {
+//            System.out.println("My name is " + user.firstName + user.lastName + " age is " + user.age);
+//        });
+//
+//
+//        // sorted by the age...
+//
+//        Collections.sort(users, Comparator.comparingInt(User::getAge));
+//
+//
+//        users.forEach(user -> {
+//            System.out.println("My name is " + user.firstName + " age is " + user.age);
+//        });
 
-        users.forEach(user -> {
-            System.out.println("My name is " + user.firstName + user.lastName + " age is " + user.age);
-        });
 
+        // stack...
 
-        // sorted by the age...
+        StackCollection stackCollection = new StackCollection(3);
+        stackCollection.push(10);
+        stackCollection.push(20);
+        stackCollection.push(30);
+        stackCollection.pop();
 
-        Collections.sort(users, Comparator.comparingInt(User::getAge));
+        stackCollection.display();
 
-
-        users.forEach(user -> {
-            System.out.println("My name is " + user.firstName + " age is " + user.age);
-        });
 
     }
 }

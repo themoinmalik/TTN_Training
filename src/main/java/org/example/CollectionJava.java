@@ -108,7 +108,6 @@ public class CollectionJava {
 
 
                 // iterate over map using foreach and lambda...
-
                 employeeDoubleMap.forEach((employee, aDouble) -> {
                         System.out.println(employee.getName() + aDouble);
                 });
