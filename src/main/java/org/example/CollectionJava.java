@@ -104,8 +104,14 @@ public class CollectionJava {
                 Map<Employee, Double> employeeDoubleMap = new HashMap<>();
                 employeeDoubleMap.put(new Employee("Moin MAlik",23,"Engineer"), 34000.0);
 
-
                 System.out.println(employeeDoubleMap);
+
+
+                // iterate over map using foreach and lambda...
+
+                employeeDoubleMap.forEach((employee, aDouble) -> {
+                        System.out.println(employee.getName() + aDouble);
+                });
 
         }
 
