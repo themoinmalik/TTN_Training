@@ -8,6 +8,7 @@ public class StackCollection {
     private int[] arr;
     private int size;
     private int top;
+    private int min = Integer.MAX_VALUE;
 
 
     public StackCollection(int size) {
@@ -19,6 +20,9 @@ public class StackCollection {
 
     public void push(int n) {
         arr[++top] = n;
+        if (n < min) {
+            this.min = n;
+        }
     }
 
     public int pop() {
@@ -26,10 +30,26 @@ public class StackCollection {
         return arr[top--];
     }
 
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top+1 == size;
+    }
+
+
+    public int getMin() {
+
+        return min;
+    }
 
     public void display() {
 
-        System.out.println(Arrays.toString(arr));
+        for (int i =0;i<=top;i++) {
+            System.out.print(arr[i]);
+        }
+        System.out.println(" TOP ");
 
     }
 

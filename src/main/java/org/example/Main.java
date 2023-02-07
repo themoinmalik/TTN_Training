@@ -99,9 +99,15 @@ public class Main {
         stackCollection.push(10);
         stackCollection.push(20);
         stackCollection.push(30);
-        stackCollection.pop();
-
         stackCollection.display();
+        System.out.println(stackCollection.isFull());
+        stackCollection.pop();
+        stackCollection.display();
+
+        System.out.println(stackCollection.getMin());
+
+        // is empty..
+        System.out.println(stackCollection.isEmpty());
 
 
     }
