@@ -3,6 +3,7 @@ package org.example;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 interface Calculate {
 
@@ -10,8 +11,8 @@ interface Calculate {
 
 //    void sum(int n);
 
-
-    int sum(int a, int b);
+//
+//    int sum(int a, int b);
 
 }
 
@@ -50,11 +51,28 @@ public class Java8 {
 
         // consumer type....
 
-        List<Integer> list = Arrays.asList(1,2,3,5,7);
+//        List<Integer> list = Arrays.asList(1,2,3,5,7);
+//
+//        list.stream().forEach(e -> System.out.println(e));
 
-        list.stream().forEach(e -> System.out.println(e));
+
+        // predicate....
+
+//        List<Integer> list1 = Arrays.asList(1,2,4,5,7,8,9);
+//        list1.stream().filter(i -> i%2 == 0).forEach(i -> System.out.println(i));
+//
+
+        // supplier....
 
 
+        Supplier<String> supplier = () -> {return "Hello world";};
+
+
+        List<Integer> list = Arrays.asList();
+
+        System.out.println(list.stream().findAny().orElseGet(() -> {
+            return 2023;
+        }));
 
 
 
