@@ -65,18 +65,18 @@ public class Java8 {
         // supplier....
 
 
-        Supplier<String> supplier = () -> {return "Hello world";};
+//        Supplier<String> supplier = () -> {return "Hello world";};
+//
+//
+//        List<Integer> list = Arrays.asList();
+//
+//        System.out.println(list.stream().findAny().orElseGet(() -> {
+//            return 2023;
+//        }));
 
 
-        List<Integer> list = Arrays.asList();
-
-        System.out.println(list.stream().findAny().orElseGet(() -> {
-            return 2023;
-        }));
-
-
+        /// Stream api...
 
     }
-
 
 }
