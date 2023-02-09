@@ -11,10 +11,28 @@ interface Calculate {
 
 //    void sum(int n);
 
-//
 //    int sum(int a, int b);
 
 }
+
+interface Greater {
+    boolean greater(int a, int b);
+}
+
+interface IncByOne {
+    int increment(int a);
+}
+
+interface Concat {
+    String concatStrings(String a, String b);
+}
+
+interface UpperCase {
+    String upper(String a);
+}
+
+
+
 
 public class Java8 {
 
@@ -67,15 +85,14 @@ public class Java8 {
 
 //        Supplier<String> supplier = () -> {return "Hello world";};
 //
-//
+
+        // stream...
 //        List<Integer> list = Arrays.asList();
 //
 //        System.out.println(list.stream().findAny().orElseGet(() -> {
 //            return 2023;
 //        }));
 
-
-        /// Stream api...
 
     }
 
