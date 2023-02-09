@@ -95,19 +95,34 @@ public class Main {
 
         // stack...
 
-        StackCollection stackCollection = new StackCollection(3);
-        stackCollection.push(10);
-        stackCollection.push(20);
-        stackCollection.push(30);
-        stackCollection.display();
-        System.out.println(stackCollection.isFull());
-        stackCollection.pop();
-        stackCollection.display();
+//        StackCollection stackCollection = new StackCollection(3);
+//        stackCollection.push(10);
+//        stackCollection.push(20);
+//        stackCollection.push(30);
+//        stackCollection.display();
+//        System.out.println(stackCollection.isFull());
+//        stackCollection.pop();
+//        stackCollection.display();
+//
+//        System.out.println(stackCollection.getMin());
+//
+//        // is empty..
+//        System.out.println(stackCollection.isEmpty());
 
-        System.out.println(stackCollection.getMin());
 
-        // is empty..
-        System.out.println(stackCollection.isEmpty());
+        Greater greater = (a,b) -> a > b;
+        System.out.println(greater.greater(5,1));
+
+
+        IncByOne incByOne = (a) -> a +1;
+        System.out.println(incByOne.increment(5));
+
+
+        Concat concat = (a,b) -> a+b;
+        System.out.println(concat.concatStrings("moin","malik"));
+
+        UpperCase upperCase = (a) -> a.toUpperCase();
+        System.out.println(upperCase.upper("moin malik"));
 
 
     }
