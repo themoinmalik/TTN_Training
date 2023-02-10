@@ -125,5 +125,17 @@ public class Main {
         System.out.println(upperCase.upper("moin malik"));
 
 
+
+        MethodInterface addNum = new Java8()::Add;
+        System.out.println(addNum.MI(2,4));
+
+        MethodInterface subNum = new Java8()::Sub;
+        System.out.println(subNum.MI(8,3));
+
+        MethodInterface mulNum = new Java8()::Mul;
+        System.out.println(mulNum.MI(2,3));
+
+
+
     }
 }
