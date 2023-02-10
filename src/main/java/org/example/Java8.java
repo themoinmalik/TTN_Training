@@ -1,10 +1,6 @@
 package org.example;
 
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Supplier;
-
 interface Calculate {
 
 //    void sum();
@@ -30,8 +26,6 @@ interface Concat {
 interface UpperCase {
     String upper(String a);
 }
-
-
 
 
 public class Java8 {
@@ -95,8 +89,5 @@ public class Java8 {
 
         System.out.println("Hello from feb 9");
 
-
-
     }
-
 }
