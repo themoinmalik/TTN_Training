@@ -27,8 +27,28 @@ interface UpperCase {
     String upper(String a);
 }
 
+// using method reference method created and apply to add and subtract.
+// method and using static method reference created.
+
+interface  MethodInterface {
+    int MI(int a , int b);
+}
+
 
 public class Java8 {
+
+
+    public int Add(int a, int b) {
+        return  a +b;
+    }
+
+    public int Sub(int a, int b) {
+        return a-b;
+    }
+
+    public int Mul(int a, int b) {
+        return  a*b;
+    }
 
     public static void main(String[] args) {
 
@@ -87,7 +107,8 @@ public class Java8 {
 //            return 2023;
 //        }));
 
-        System.out.println("Hello from feb 9");
+
+
 
     }
 }
