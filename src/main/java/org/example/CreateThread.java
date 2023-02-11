@@ -12,9 +12,6 @@ public class CreateThread {
 
         Thread run = new Thread(mythread);
         run.start();
-
-
     }
-
 
 }

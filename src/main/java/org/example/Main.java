@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws InsufficientAmountException {
@@ -109,31 +106,42 @@ public class Main {
 //        // is empty..
 //        System.out.println(stackCollection.isEmpty());
 
+//
+//        Greater greater = (a,b) -> a > b;
+//        System.out.println(greater.greater(5,1));
+//
+//
+//        IncByOne incByOne = (a) -> a +1;
+//        System.out.println(incByOne.increment(5));
+//
+//
+//        Concat concat = (a,b) -> a+b;
+//        System.out.println(concat.concatStrings("moin","malik"));
+//
+//        UpperCase upperCase = (a) -> a.toUpperCase();
+//        System.out.println(upperCase.upper("moin malik"));
+//
+//
+//
+//        MethodInterface addNum = new Java8()::Add;
+//        System.out.println(addNum.MI(2,4));
+//
+//        MethodInterface subNum = new Java8()::Sub;
+//        System.out.println(subNum.MI(8,3));
+//
+//        MethodInterface mulNum = new Java8()::Mul;
+//        System.out.println(mulNum.MI(2,3));
 
-        Greater greater = (a,b) -> a > b;
-        System.out.println(greater.greater(5,1));
 
 
-        IncByOne incByOne = (a) -> a +1;
-        System.out.println(incByOne.increment(5));
+        // Reducers...
 
+        List<String> letters = Arrays.asList("a", "b", "c", "d", "e");
+        String result = letters
+                .stream()
+                .reduce("", (partialString, element) -> partialString + element);
 
-        Concat concat = (a,b) -> a+b;
-        System.out.println(concat.concatStrings("moin","malik"));
-
-        UpperCase upperCase = (a) -> a.toUpperCase();
-        System.out.println(upperCase.upper("moin malik"));
-
-
-
-        MethodInterface addNum = new Java8()::Add;
-        System.out.println(addNum.MI(2,4));
-
-        MethodInterface subNum = new Java8()::Sub;
-        System.out.println(subNum.MI(8,3));
-
-        MethodInterface mulNum = new Java8()::Mul;
-        System.out.println(mulNum.MI(2,3));
+        System.out.println(result);
 
 
 
