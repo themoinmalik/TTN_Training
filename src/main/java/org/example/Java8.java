@@ -1,6 +1,11 @@
 package org.example;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 interface Calculate {
 
 //    void sum();
@@ -108,7 +113,16 @@ public class Java8 {
 //        }));
 
 
+        // Stream....
 
+        List<Integer> list = Arrays.asList(1,3,54,67,7,3,2,4,65,7,3,2,1,4,6,78);
+        List<Integer> newList = list.stream()
+                .filter(e -> e%2 == 0)
+                .map(e -> e*2)
+                .map(e-> e - 10)
+                .collect(Collectors.toList());
+
+        System.out.println(newList);
 
     }
 }
