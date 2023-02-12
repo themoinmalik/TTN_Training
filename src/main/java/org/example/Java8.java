@@ -1,10 +1,9 @@
 package org.example;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 interface Calculate {
 
@@ -127,17 +126,66 @@ public class Java8 {
 
         /// reducers gives you sum.
 
-        List<String> letters = Arrays.asList("a", "b", "c", "d", "e");
-        String result = letters
-                .stream()
-                .reduce("", (partialString, element) -> partialString + element);
-        System.out.println(result);
+//        List<String> letters = Arrays.asList("a", "b", "c", "d", "e");
+//        String result = letters
+//                .stream()
+//                .reduce("", (partialString, element) -> partialString + element);
+//        System.out.println(result);
+//
+//
+//        List<Integer> list = Arrays.asList(2,34,5,7,8,89,4,2,45,67,89);
+//        int sum = list.stream().mapToInt(i -> i).sum();
+//        int average  = sum/list.size();
+//        System.out.println(sum);
+//        System.out.println(average);
 
 
-        List<Integer> list = Arrays.asList(2,34,5,7,8,89,4,2,45,67,89);
-        int sum = list.stream().mapToInt(i -> i).sum();
-        int average  = sum/list.size();
-        System.out.println(sum);
-        System.out.println(average);
+        Random random = new Random();
+        random.ints().limit(10).forEach(System.out::println);
+
+
+        List<String> str = new ArrayList<>();
+        str.add("Moin MAlik naam h mera.... ");
+
+        str.stream().forEach(System.out::println);
+
+
+        // min number of a stream...
+
+        List<Integer> list = Arrays.asList(2,3,4,56,7,2,1,1,4,6,8,34,5);
+
+//        Integer min = Stream.of(list).min(Comparator.comparing(Integer::valueOf)).get();
+//
+//        System.out.println(min);
+
+
+        // string having leght > 3;
+
+//        List<String> list = Arrays.asList("moin", "malik", "hii");
+//
+//        long count = list.stream().filter(s -> s.length() > 3).count();
+//
+//        System.out.println(count);
+
+        // print those strings...
+//        list.stream()
+//                .filter(s -> s.length() > 3)
+//                .forEach(System.out::println);
+
+
+        // multiple of 3 ...
+
+        List<Integer> list1 = Arrays.asList(34,1,2,45,7,1,6,8,9);
+
+        list1.stream().filter(e -> e%3 ==0).forEach(System.out::println);
+
+
+        Stream<Integer> stream = list1.stream();
+        Stream<Integer> stream1 = list.stream();
+
+        Stream<Integer> stream2 = Stream.concat(stream,stream1);
+        stream2.forEach(System.out::println);
+
+
     }
 }
