@@ -1,8 +1,6 @@
 package org.example.oops;
 
 
-
-
 class A {
 
     public void method(){
