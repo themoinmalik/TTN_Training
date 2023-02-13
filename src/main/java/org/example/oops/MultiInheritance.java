@@ -19,12 +19,13 @@ class B {
 }
 
 
-public class MultiInheritance extends A,B {    // not allowed. multi inheritance...
+class MultiInheritance extends A,B{    // not allowed. multi inheritance...
 
 
     public static void main(String[] args) {
 
+        A a = new A();
+        a.method();
+
     }
-
-
 }
