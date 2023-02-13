@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Objects;
+package org.example.JavaTraining;
 
 public class User implements Comparable<User>{
 

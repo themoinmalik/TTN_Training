@@ -1,15 +1,11 @@
-package org.example;
+package org.example.JavaTraining;
 
-import javax.naming.InsufficientResourcesException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Locale;
-import java.util.Scanner;
 
 
-class InsufficientAmountException extends  Exception {
+public class InsufficientAmountException extends  Exception {
 
     public InsufficientAmountException(String s) {
         super(s);
