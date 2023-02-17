@@ -27,6 +27,9 @@ public class Encapsulated {
 //        c.c;    // c is private  hence tightly encapsulated....
 
 
+        System.out.println("comimit on feb 17 ... ");
+
+
     }
 
 
