@@ -48,8 +48,7 @@ public class Main {
 //        Bank bank = new Bank();
 //        bank.fileLogBank(2000,1000);
 
-
-        System.out.println("hello from mac olxin");
+        System.out.println("hello from moin malik from olx  mac ");
 //
 
     }
