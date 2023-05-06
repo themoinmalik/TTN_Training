@@ -187,5 +187,17 @@ public class Java8 {
         stream2.forEach(System.out::println);
 
 
+
+        List<Integer> ageList = new ArrayList<>();
+        ageList.add(23);
+        ageList.add(24);
+        ageList.add(30);
+        ageList.add(45);
+
+        Collection<Integer> filterAge = ageList.stream().filter(e-> e>23).collect(Collectors.toList());
+
+        System.out.println(filterAge);
+
+
     }
 }
