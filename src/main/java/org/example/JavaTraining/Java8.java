@@ -187,7 +187,6 @@ public class Java8 {
         stream2.forEach(System.out::println);
 
 
-
         List<Integer> ageList = new ArrayList<>();
         ageList.add(23);
         ageList.add(24);
@@ -197,6 +196,26 @@ public class Java8 {
         Collection<Integer> filterAge = ageList.stream().filter(e-> e>23).collect(Collectors.toList());
 
         System.out.println(filterAge);
+
+        // stream... questions....
+        // 1. Write a program that uses streams to find the sum of all integers in a list of numbers.
+
+        List<Integer> sumlist = Arrays.asList(2,4,6,3,21,4,45);
+
+        int sum = sumlist.stream().mapToInt(Integer::intValue).sum();
+        System.out.println(sum);
+
+
+        // Given a list of strings, write a program that uses streams to
+        // find the shortest string in the list.
+
+        List<String> sortstr = Arrays.asList("moin","malik", "hello","hihi");
+
+        String ans = sortstr.stream()
+                .min((e1,e2) -> e1.length() - e2.length()).orElse(null);
+
+        System.out.println(ans);
+
 
 
     }
